@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-ministries",
+      "handler": "wtc-ministries.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-ministries",
+      "handler": "wtc-ministries.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-ministries",
+      "handler": "wtc-ministries.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

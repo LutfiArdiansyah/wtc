@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-leaderships",
+      "handler": "wtc-leadership.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-leaderships/count",
+      "handler": "wtc-leadership.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-leaderships/:id",
+      "handler": "wtc-leadership.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wtc-leaderships",
+      "handler": "wtc-leadership.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-leaderships/:id",
+      "handler": "wtc-leadership.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-leaderships/:id",
+      "handler": "wtc-leadership.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

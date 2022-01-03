@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-ministries-sub-categories",
+      "handler": "wtc-ministries-sub-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-ministries-sub-categories/count",
+      "handler": "wtc-ministries-sub-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-ministries-sub-categories/:id",
+      "handler": "wtc-ministries-sub-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wtc-ministries-sub-categories",
+      "handler": "wtc-ministries-sub-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-ministries-sub-categories/:id",
+      "handler": "wtc-ministries-sub-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-ministries-sub-categories/:id",
+      "handler": "wtc-ministries-sub-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

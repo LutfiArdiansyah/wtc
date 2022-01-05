@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-location-areas",
+      "handler": "wtc-location-area.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-location-areas/count",
+      "handler": "wtc-location-area.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-location-areas/:id",
+      "handler": "wtc-location-area.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wtc-location-areas",
+      "handler": "wtc-location-area.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-location-areas/:id",
+      "handler": "wtc-location-area.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-location-areas/:id",
+      "handler": "wtc-location-area.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

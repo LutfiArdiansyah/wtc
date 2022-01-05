@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wtc_location_areas",
+  "info": {
+    "name": "WTC Location Area"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "area": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "wtc_location_by_areas": {
+      "via": "wtc_location_area",
+      "collection": "wtc-location-by-area"
+    }
+  }
+}

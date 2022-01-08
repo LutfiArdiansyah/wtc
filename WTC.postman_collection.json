@@ -1,0 +1,308 @@
+{
+	"info": {
+		"_postman_id": "04f8133c-1f15-4016-849f-0de80c2a2bd5",
+		"name": "WTC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "WTC About Us",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/wtc-about-us",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"wtc-about-us"
+					],
+					"query": [
+						{
+							"key": "_locale",
+							"value": "id-ID",
+							"disabled": true
+						},
+						{
+							"key": "_where[title]",
+							"value": "Global Church",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WTC Communities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/wtc-communities",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"wtc-communities"
+					],
+					"query": [
+						{
+							"key": "_locale",
+							"value": "id-ID",
+							"disabled": true
+						},
+						{
+							"key": "_where[title]",
+							"value": "Global Church",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WTC Landing Page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/wtc-landing-page",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"wtc-landing-page"
+					],
+					"query": [
+						{
+							"key": "_locale",
+							"value": "id-ID",
+							"disabled": true
+						},
+						{
+							"key": "_where[title]",
+							"value": "Global Church",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WTC Ministries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/wtc-ministries",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"wtc-ministries"
+					],
+					"query": [
+						{
+							"key": "_locale",
+							"value": "id-ID",
+							"disabled": true
+						},
+						{
+							"key": "_where[title]",
+							"value": "Global Church",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WTC Articles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/wtc-articles?_where[title]=Global Church",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"wtc-articles"
+					],
+					"query": [
+						{
+							"key": "_locale",
+							"value": "id-ID",
+							"disabled": true
+						},
+						{
+							"key": "_where[title]",
+							"value": "Global Church"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WTC Leaderships",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/wtc-leaderships",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"wtc-leaderships"
+					],
+					"query": [
+						{
+							"key": "_locale",
+							"value": "id-ID",
+							"disabled": true
+						},
+						{
+							"key": "_where[title]",
+							"value": "Global Church",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WTC Location Areas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/wtc-location-areas",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"wtc-location-areas"
+					],
+					"query": [
+						{
+							"key": "_locale",
+							"value": "id-ID",
+							"disabled": true
+						},
+						{
+							"key": "_where[title]",
+							"value": "Global Church",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WTC Ministries Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/wtc-ministries-categories",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"wtc-ministries-categories"
+					],
+					"query": [
+						{
+							"key": "_locale",
+							"value": "id-ID",
+							"disabled": true
+						},
+						{
+							"key": "_where[title]",
+							"value": "Global Church",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WTC Nextgen Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/wtc-nextgen-categories",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"wtc-nextgen-categories"
+					],
+					"query": [
+						{
+							"key": "_locale",
+							"value": "id-ID",
+							"disabled": true
+						},
+						{
+							"key": "_where[title]",
+							"value": "Global Church",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WTC Worships Places",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/wtc-worship-places",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"wtc-worship-places"
+					],
+					"query": [
+						{
+							"key": "_locale",
+							"value": "id-ID",
+							"disabled": true
+						},
+						{
+							"key": "_where[title]",
+							"value": "Global Church",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

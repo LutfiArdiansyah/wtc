@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-communities",
+      "handler": "wtc-communities.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-communities",
+      "handler": "wtc-communities.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-communities",
+      "handler": "wtc-communities.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -530,9 +530,8 @@
       "Wtc-leadership": {
         "required": [
           "id",
-          "avatar",
           "name",
-          "bio"
+          "description"
         ],
         "properties": {
           "id": {
@@ -608,46 +607,64 @@
           "name": {
             "type": "string"
           },
-          "bio": {
+          "description": {
             "type": "string"
           },
-          "instagram": {
+          "instagram_name_1": {
             "type": "string"
           },
-          "facebook": {
+          "instagram_link_1": {
             "type": "string"
           },
-          "wtc_page": {
+          "instagram_name_2": {
+            "type": "string"
+          },
+          "instagram_link_2": {
+            "type": "string"
+          },
+          "wtc_article": {
             "required": [
               "id",
-              "name",
               "title",
-              "description"
+              "banner",
+              "content"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "name": {
-                "type": "string"
-              },
               "title": {
                 "type": "string"
               },
-              "description": {
-                "type": "string"
-              },
-              "carousel": {
+              "banner": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
+              },
+              "content": {
+                "type": "string"
               },
               "wtc_leaderships": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
+              },
+              "wtc_worship_places": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "gallery": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "wtc_ministries_category": {
+                "type": "string"
               },
               "localizations": {
                 "type": "array",
@@ -674,9 +691,8 @@
             "items": {
               "required": [
                 "id",
-                "avatar",
                 "name",
-                "bio"
+                "description"
               ],
               "properties": {
                 "id": {
@@ -688,16 +704,22 @@
                 "name": {
                   "type": "string"
                 },
-                "bio": {
+                "description": {
                   "type": "string"
                 },
-                "instagram": {
+                "instagram_name_1": {
                   "type": "string"
                 },
-                "facebook": {
+                "instagram_link_1": {
                   "type": "string"
                 },
-                "wtc_page": {
+                "instagram_name_2": {
+                  "type": "string"
+                },
+                "instagram_link_2": {
+                  "type": "string"
+                },
+                "wtc_article": {
                   "type": "string"
                 },
                 "localizations": {
@@ -733,22 +755,28 @@
       "NewWtc-leadership": {
         "required": [
           "name",
-          "bio"
+          "description"
         ],
         "properties": {
           "name": {
             "type": "string"
           },
-          "bio": {
+          "description": {
             "type": "string"
           },
-          "instagram": {
+          "instagram_name_1": {
             "type": "string"
           },
-          "facebook": {
+          "instagram_link_1": {
             "type": "string"
           },
-          "wtc_page": {
+          "instagram_name_2": {
+            "type": "string"
+          },
+          "instagram_link_2": {
+            "type": "string"
+          },
+          "wtc_article": {
             "type": "string"
           },
           "localizations": {

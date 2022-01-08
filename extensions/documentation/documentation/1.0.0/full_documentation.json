@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/05/2022 10:48:48 AM"
+    "x-generation-date": "01/08/2022 4:46:23 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -659,13 +659,13 @@
         "parameters": []
       }
     },
-    "/wtc-about": {
+    "/wtc-about-us": {
       "get": {
         "deprecated": false,
-        "description": "Find all the wtc-about's records",
+        "description": "Find all the wtc-about-us's records",
         "responses": {
           "200": {
-            "description": "Retrieve wtc-about document(s)",
+            "description": "Retrieve wtc-about-us document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -711,7 +711,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-about"
+          "Wtc-about-us"
         ],
         "parameters": [
           {
@@ -854,10 +854,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single wtc-about record",
+        "description": "Update a single wtc-about-us record",
         "responses": {
           "200": {
-            "description": "Retrieve wtc-about document(s)",
+            "description": "Retrieve wtc-about-us document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -903,7 +903,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-about"
+          "Wtc-about-us"
         ],
         "requestBody": {
           "description": "",
@@ -911,7 +911,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewWtc-about"
+                "$ref": "#/components/schemas/NewWtc-about-us"
               }
             }
           }
@@ -920,10 +920,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single wtc-about record",
+        "description": "Delete a single wtc-about-us record",
         "responses": {
           "200": {
-            "description": "deletes a single wtc-about based on the ID supplied",
+            "description": "deletes a single wtc-about-us based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -966,7 +966,1155 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-about"
+          "Wtc-about-us"
+        ],
+        "parameters": []
+      }
+    },
+    "/wtc-articles": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the wtc-articles's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve wtc-articles document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wtc-articles"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "post": {
+        "deprecated": false,
+        "description": "Create a new wtc-articles record",
+        "responses": {
+          "200": {
+            "description": "Retrieve wtc-articles document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wtc-articles"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewWtc-articles"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/wtc-articles/count": {
+      "get": {
+        "deprecated": false,
+        "description": "Retrieve the number of wtc-articles documents",
+        "responses": {
+          "200": {
+            "description": "Retrieve wtc-articles document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wtc-articles"
+        ],
+        "parameters": []
+      }
+    },
+    "/wtc-articles/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "Find one wtc-articles record",
+        "responses": {
+          "200": {
+            "description": "Retrieve wtc-articles document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wtc-articles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single wtc-articles record",
+        "responses": {
+          "200": {
+            "description": "Retrieve wtc-articles document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wtc-articles"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewWtc-articles"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single wtc-articles record",
+        "responses": {
+          "200": {
+            "description": "deletes a single wtc-articles based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wtc-articles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/wtc-communities": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the wtc-communities's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve wtc-communities document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wtc-communities"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single wtc-communities record",
+        "responses": {
+          "200": {
+            "description": "Retrieve wtc-communities document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wtc-communities"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewWtc-communities"
+              }
+            }
+          }
+        },
+        "parameters": []
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single wtc-communities record",
+        "responses": {
+          "200": {
+            "description": "deletes a single wtc-communities based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wtc-communities"
+        ],
+        "parameters": []
+      }
+    },
+    "/wtc-landing-page": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the wtc-landing-page's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve wtc-landing-page document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wtc-landing-page"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single wtc-landing-page record",
+        "responses": {
+          "200": {
+            "description": "Retrieve wtc-landing-page document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wtc-landing-page"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewWtc-landing-page"
+              }
+            }
+          }
+        },
+        "parameters": []
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single wtc-landing-page record",
+        "responses": {
+          "200": {
+            "description": "deletes a single wtc-landing-page based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wtc-landing-page"
         ],
         "parameters": []
       }
@@ -2019,530 +3167,6 @@
         ]
       }
     },
-    "/wtc-location-by-areas": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-location-by-area"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-location-by-area"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewWtc-location-by-area"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/wtc-location-by-areas/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-location-by-area"
-        ],
-        "parameters": []
-      }
-    },
-    "/wtc-location-by-areas/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-location-by-area"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-location-by-area"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewWtc-location-by-area"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a record",
-        "responses": {
-          "200": {
-            "description": "deletes a single record based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-location-by-area"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
     "/wtc-ministries-categories": {
       "get": {
         "deprecated": false,
@@ -3067,530 +3691,6 @@
         ]
       }
     },
-    "/wtc-ministries-sub-categories": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-ministries-sub-category"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-ministries-sub-category"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewWtc-ministries-sub-category"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/wtc-ministries-sub-categories/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-ministries-sub-category"
-        ],
-        "parameters": []
-      }
-    },
-    "/wtc-ministries-sub-categories/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-ministries-sub-category"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-ministries-sub-category"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewWtc-ministries-sub-category"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a record",
-        "responses": {
-          "200": {
-            "description": "deletes a single record based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-ministries-sub-category"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
     "/wtc-ministries": {
       "get": {
         "deprecated": false,
@@ -3903,319 +4003,7 @@
         "parameters": []
       }
     },
-    "/wtc-mission": {
-      "get": {
-        "deprecated": false,
-        "description": "Find all the wtc-mission's records",
-        "responses": {
-          "200": {
-            "description": "Retrieve wtc-mission document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-mission"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a single wtc-mission record",
-        "responses": {
-          "200": {
-            "description": "Retrieve wtc-mission document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-mission"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewWtc-mission"
-              }
-            }
-          }
-        },
-        "parameters": []
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a single wtc-mission record",
-        "responses": {
-          "200": {
-            "description": "deletes a single wtc-mission based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-mission"
-        ],
-        "parameters": []
-      }
-    },
-    "/wtc-pages": {
+    "/wtc-nextgen-categories": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -4267,7 +4055,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-page"
+          "Wtc-nextgen-category"
         ],
         "parameters": [
           {
@@ -4459,7 +4247,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-page"
+          "Wtc-nextgen-category"
         ],
         "requestBody": {
           "description": "",
@@ -4467,14 +4255,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewWtc-page"
+                "$ref": "#/components/schemas/NewWtc-nextgen-category"
               }
             }
           }
         }
       }
     },
-    "/wtc-pages/count": {
+    "/wtc-nextgen-categories/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -4526,12 +4314,12 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-page"
+          "Wtc-nextgen-category"
         ],
         "parameters": []
       }
     },
-    "/wtc-pages/{id}": {
+    "/wtc-nextgen-categories/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -4583,7 +4371,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-page"
+          "Wtc-nextgen-category"
         ],
         "parameters": [
           {
@@ -4649,7 +4437,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-page"
+          "Wtc-nextgen-category"
         ],
         "requestBody": {
           "description": "",
@@ -4657,7 +4445,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewWtc-page"
+                "$ref": "#/components/schemas/NewWtc-nextgen-category"
               }
             }
           }
@@ -4723,7 +4511,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-page"
+          "Wtc-nextgen-category"
         ],
         "parameters": [
           {
@@ -4739,13 +4527,13 @@
         ]
       }
     },
-    "/wtc-vision": {
+    "/wtc-worship-places": {
       "get": {
         "deprecated": false,
-        "description": "Find all the wtc-vision's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve wtc-vision document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -4791,7 +4579,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-vision"
+          "Wtc-worship-place"
         ],
         "parameters": [
           {
@@ -4932,12 +4720,12 @@
           }
         ]
       },
-      "put": {
+      "post": {
         "deprecated": false,
-        "description": "Update a single wtc-vision record",
+        "description": "Create a new record",
         "responses": {
           "200": {
-            "description": "Retrieve wtc-vision document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -4983,7 +4771,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-vision"
+          "Wtc-worship-place"
         ],
         "requestBody": {
           "description": "",
@@ -4991,19 +4779,220 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewWtc-vision"
+                "$ref": "#/components/schemas/NewWtc-worship-place"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/wtc-worship-places/count": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
               }
             }
           }
         },
+        "summary": "",
+        "tags": [
+          "Wtc-worship-place"
+        ],
         "parameters": []
+      }
+    },
+    "/wtc-worship-places/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wtc-worship-place"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Wtc-worship-place"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewWtc-worship-place"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single wtc-vision record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single wtc-vision based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -5046,9 +5035,20 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-vision"
+          "Wtc-worship-place"
         ],
-        "parameters": []
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
       }
     },
     "/email/": {
@@ -7763,10 +7763,12 @@
           }
         }
       },
-      "Wtc-about": {
+      "Wtc-about-us": {
         "required": [
           "id",
-          "about"
+          "about",
+          "vision",
+          "mission"
         ],
         "properties": {
           "id": {
@@ -7775,18 +7777,709 @@
           "about": {
             "type": "string"
           },
+          "vision": {
+            "type": "string"
+          },
+          "mission": {
+            "type": "string"
+          },
+          "logo_1": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "logo_2": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "wtc_leaderships": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "description"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "avatar": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "instagram_name_1": {
+                  "type": "string"
+                },
+                "instagram_link_1": {
+                  "type": "string"
+                },
+                "instagram_name_2": {
+                  "type": "string"
+                },
+                "instagram_link_2": {
+                  "type": "string"
+                },
+                "wtc_article": {
+                  "type": "string"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
-                "about"
+                "about",
+                "vision",
+                "mission"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
                 "about": {
+                  "type": "string"
+                },
+                "vision": {
+                  "type": "string"
+                },
+                "mission": {
+                  "type": "string"
+                },
+                "logo_1": {
+                  "type": "string"
+                },
+                "logo_2": {
+                  "type": "string"
+                },
+                "wtc_leaderships": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "locale": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewWtc-about-us": {
+        "required": [
+          "about",
+          "vision",
+          "mission"
+        ],
+        "properties": {
+          "about": {
+            "type": "string"
+          },
+          "vision": {
+            "type": "string"
+          },
+          "mission": {
+            "type": "string"
+          },
+          "wtc_leaderships": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "locale": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Wtc-articles": {
+        "required": [
+          "id",
+          "title",
+          "banner",
+          "content"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "banner": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alternativeText": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "content": {
+            "type": "string"
+          },
+          "wtc_leaderships": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "description"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "avatar": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "instagram_name_1": {
+                  "type": "string"
+                },
+                "instagram_link_1": {
+                  "type": "string"
+                },
+                "instagram_name_2": {
+                  "type": "string"
+                },
+                "instagram_link_2": {
+                  "type": "string"
+                },
+                "wtc_article": {
+                  "type": "string"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "wtc_worship_places": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "address",
+                "day",
+                "time",
+                "pastor_name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "day": {
+                  "type": "string"
+                },
+                "time": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "phone_1": {
+                  "type": "string"
+                },
+                "phone_2": {
+                  "type": "string"
+                },
+                "instagram_name": {
+                  "type": "string"
+                },
+                "instagram_link": {
+                  "type": "string"
+                },
+                "youtube_name": {
+                  "type": "string"
+                },
+                "youtube_link": {
+                  "type": "string"
+                },
+                "pastor_name": {
+                  "type": "string"
+                },
+                "pastor_avatar": {
+                  "type": "string"
+                },
+                "maps_link": {
+                  "type": "string"
+                },
+                "wtc_nextgen_category": {
+                  "type": "string"
+                },
+                "wtc_location_area": {
+                  "type": "string"
+                },
+                "wtc_article": {
+                  "type": "string"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "gallery": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alternativeText": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "wtc_ministries_category": {
+            "required": [
+              "id",
+              "title",
+              "description",
+              "banner",
+              "button_name",
+              "button_link"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "banner": {
+                "type": "string"
+              },
+              "button_name": {
+                "type": "string"
+              },
+              "button_link": {
+                "type": "string"
+              },
+              "wtc_articles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "locale": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title",
+                "banner",
+                "content"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "banner": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "content": {
+                  "type": "string"
+                },
+                "wtc_leaderships": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "wtc_worship_places": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "gallery": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "wtc_ministries_category": {
                   "type": "string"
                 },
                 "localizations": {
@@ -7819,12 +8512,533 @@
           }
         }
       },
-      "NewWtc-about": {
+      "NewWtc-articles": {
         "required": [
-          "about"
+          "title",
+          "content"
         ],
         "properties": {
-          "about": {
+          "title": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "wtc_leaderships": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "wtc_worship_places": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "wtc_ministries_category": {
+            "type": "string"
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "locale": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Wtc-communities": {
+        "required": [
+          "id",
+          "title",
+          "description",
+          "banner",
+          "button_name",
+          "button_link"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "banner": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alternativeText": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "button_name": {
+            "type": "string"
+          },
+          "button_link": {
+            "type": "string"
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title",
+                "description",
+                "banner",
+                "button_name",
+                "button_link"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "banner": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "button_name": {
+                  "type": "string"
+                },
+                "button_link": {
+                  "type": "string"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "locale": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewWtc-communities": {
+        "required": [
+          "title",
+          "description",
+          "button_name",
+          "button_link"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "button_name": {
+            "type": "string"
+          },
+          "button_link": {
+            "type": "string"
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "locale": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Wtc-landing-page": {
+        "required": [
+          "id",
+          "title",
+          "banner",
+          "button_name_1",
+          "button_name_2",
+          "button_name_3",
+          "button_name_4",
+          "button_link_1",
+          "button_link_2",
+          "button_link_3",
+          "button_link_4",
+          "instagram_name",
+          "instagram_link",
+          "youtube_name",
+          "youtube_link"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string",
+            "default": "World Transformation Church"
+          },
+          "banner": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "button_name_1": {
+            "type": "string"
+          },
+          "button_name_2": {
+            "type": "string"
+          },
+          "button_name_3": {
+            "type": "string"
+          },
+          "button_name_4": {
+            "type": "string"
+          },
+          "button_link_1": {
+            "type": "string"
+          },
+          "button_link_2": {
+            "type": "string"
+          },
+          "button_link_3": {
+            "type": "string"
+          },
+          "button_link_4": {
+            "type": "string"
+          },
+          "instagram_name": {
+            "type": "string"
+          },
+          "instagram_link": {
+            "type": "string"
+          },
+          "youtube_name": {
+            "type": "string"
+          },
+          "youtube_link": {
+            "type": "string"
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title",
+                "banner",
+                "button_name_1",
+                "button_name_2",
+                "button_name_3",
+                "button_name_4",
+                "button_link_1",
+                "button_link_2",
+                "button_link_3",
+                "button_link_4",
+                "instagram_name",
+                "instagram_link",
+                "youtube_name",
+                "youtube_link"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "banner": {
+                  "type": "string"
+                },
+                "button_name_1": {
+                  "type": "string"
+                },
+                "button_name_2": {
+                  "type": "string"
+                },
+                "button_name_3": {
+                  "type": "string"
+                },
+                "button_name_4": {
+                  "type": "string"
+                },
+                "button_link_1": {
+                  "type": "string"
+                },
+                "button_link_2": {
+                  "type": "string"
+                },
+                "button_link_3": {
+                  "type": "string"
+                },
+                "button_link_4": {
+                  "type": "string"
+                },
+                "instagram_name": {
+                  "type": "string"
+                },
+                "instagram_link": {
+                  "type": "string"
+                },
+                "youtube_name": {
+                  "type": "string"
+                },
+                "youtube_link": {
+                  "type": "string"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "locale": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewWtc-landing-page": {
+        "required": [
+          "title",
+          "button_name_1",
+          "button_name_2",
+          "button_name_3",
+          "button_name_4",
+          "button_link_1",
+          "button_link_2",
+          "button_link_3",
+          "button_link_4",
+          "instagram_name",
+          "instagram_link",
+          "youtube_name",
+          "youtube_link"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "default": "World Transformation Church"
+          },
+          "button_name_1": {
+            "type": "string"
+          },
+          "button_name_2": {
+            "type": "string"
+          },
+          "button_name_3": {
+            "type": "string"
+          },
+          "button_name_4": {
+            "type": "string"
+          },
+          "button_link_1": {
+            "type": "string"
+          },
+          "button_link_2": {
+            "type": "string"
+          },
+          "button_link_3": {
+            "type": "string"
+          },
+          "button_link_4": {
+            "type": "string"
+          },
+          "instagram_name": {
+            "type": "string"
+          },
+          "instagram_link": {
+            "type": "string"
+          },
+          "youtube_name": {
+            "type": "string"
+          },
+          "youtube_link": {
             "type": "string"
           },
           "localizations": {
@@ -7851,9 +9065,8 @@
       "Wtc-leadership": {
         "required": [
           "id",
-          "avatar",
           "name",
-          "bio"
+          "description"
         ],
         "properties": {
           "id": {
@@ -7929,46 +9142,64 @@
           "name": {
             "type": "string"
           },
-          "bio": {
+          "description": {
             "type": "string"
           },
-          "instagram": {
+          "instagram_name_1": {
             "type": "string"
           },
-          "facebook": {
+          "instagram_link_1": {
             "type": "string"
           },
-          "wtc_page": {
+          "instagram_name_2": {
+            "type": "string"
+          },
+          "instagram_link_2": {
+            "type": "string"
+          },
+          "wtc_article": {
             "required": [
               "id",
-              "name",
               "title",
-              "description"
+              "banner",
+              "content"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "name": {
-                "type": "string"
-              },
               "title": {
                 "type": "string"
               },
-              "description": {
-                "type": "string"
-              },
-              "carousel": {
+              "banner": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
+              },
+              "content": {
+                "type": "string"
               },
               "wtc_leaderships": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
+              },
+              "wtc_worship_places": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "gallery": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "wtc_ministries_category": {
+                "type": "string"
               },
               "localizations": {
                 "type": "array",
@@ -7995,9 +9226,8 @@
             "items": {
               "required": [
                 "id",
-                "avatar",
                 "name",
-                "bio"
+                "description"
               ],
               "properties": {
                 "id": {
@@ -8009,16 +9239,22 @@
                 "name": {
                   "type": "string"
                 },
-                "bio": {
+                "description": {
                   "type": "string"
                 },
-                "instagram": {
+                "instagram_name_1": {
                   "type": "string"
                 },
-                "facebook": {
+                "instagram_link_1": {
                   "type": "string"
                 },
-                "wtc_page": {
+                "instagram_name_2": {
+                  "type": "string"
+                },
+                "instagram_link_2": {
+                  "type": "string"
+                },
+                "wtc_article": {
                   "type": "string"
                 },
                 "localizations": {
@@ -8054,22 +9290,28 @@
       "NewWtc-leadership": {
         "required": [
           "name",
-          "bio"
+          "description"
         ],
         "properties": {
           "name": {
             "type": "string"
           },
-          "bio": {
+          "description": {
             "type": "string"
           },
-          "instagram": {
+          "instagram_name_1": {
             "type": "string"
           },
-          "facebook": {
+          "instagram_link_1": {
             "type": "string"
           },
-          "wtc_page": {
+          "instagram_name_2": {
+            "type": "string"
+          },
+          "instagram_link_2": {
+            "type": "string"
+          },
+          "wtc_article": {
             "type": "string"
           },
           "localizations": {
@@ -8113,27 +9355,31 @@
           "description": {
             "type": "string"
           },
-          "wtc_location_by_areas": {
+          "wtc_worship_places": {
             "type": "array",
             "items": {
               "required": [
                 "id",
-                "location",
+                "name",
                 "address",
-                "times",
-                "phone_1"
+                "day",
+                "time",
+                "pastor_name"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "location": {
+                "name": {
                   "type": "string"
                 },
                 "address": {
                   "type": "string"
                 },
-                "times": {
+                "day": {
+                  "type": "string"
+                },
+                "time": {
                   "type": "string"
                 },
                 "email": {
@@ -8145,19 +9391,34 @@
                 "phone_2": {
                   "type": "string"
                 },
-                "instagram": {
+                "instagram_name": {
                   "type": "string"
                 },
-                "facebook": {
+                "instagram_link": {
                   "type": "string"
                 },
-                "youtube": {
+                "youtube_name": {
+                  "type": "string"
+                },
+                "youtube_link": {
+                  "type": "string"
+                },
+                "pastor_name": {
+                  "type": "string"
+                },
+                "pastor_avatar": {
                   "type": "string"
                 },
                 "maps_link": {
                   "type": "string"
                 },
+                "wtc_nextgen_category": {
+                  "type": "string"
+                },
                 "wtc_location_area": {
+                  "type": "string"
+                },
+                "wtc_article": {
                   "type": "string"
                 },
                 "localizations": {
@@ -8203,229 +9464,11 @@
           "description": {
             "type": "string"
           },
-          "wtc_location_by_areas": {
+          "wtc_worship_places": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
-      "Wtc-location-by-area": {
-        "required": [
-          "id",
-          "location",
-          "address",
-          "times",
-          "phone_1"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "location": {
-            "type": "string"
-          },
-          "address": {
-            "type": "string"
-          },
-          "times": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          },
-          "phone_1": {
-            "type": "string"
-          },
-          "phone_2": {
-            "type": "string"
-          },
-          "instagram": {
-            "type": "string"
-          },
-          "facebook": {
-            "type": "string"
-          },
-          "youtube": {
-            "type": "string"
-          },
-          "maps_link": {
-            "type": "string"
-          },
-          "wtc_location_area": {
-            "required": [
-              "id",
-              "name",
-              "area",
-              "description"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "area": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "wtc_location_by_areas": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "location",
-                "address",
-                "times",
-                "phone_1"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "location": {
-                  "type": "string"
-                },
-                "address": {
-                  "type": "string"
-                },
-                "times": {
-                  "type": "string"
-                },
-                "email": {
-                  "type": "string"
-                },
-                "phone_1": {
-                  "type": "string"
-                },
-                "phone_2": {
-                  "type": "string"
-                },
-                "instagram": {
-                  "type": "string"
-                },
-                "facebook": {
-                  "type": "string"
-                },
-                "youtube": {
-                  "type": "string"
-                },
-                "maps_link": {
-                  "type": "string"
-                },
-                "wtc_location_area": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "locale": {
-            "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewWtc-location-by-area": {
-        "required": [
-          "location",
-          "address",
-          "times",
-          "phone_1"
-        ],
-        "properties": {
-          "location": {
-            "type": "string"
-          },
-          "address": {
-            "type": "string"
-          },
-          "times": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          },
-          "phone_1": {
-            "type": "string"
-          },
-          "phone_2": {
-            "type": "string"
-          },
-          "instagram": {
-            "type": "string"
-          },
-          "facebook": {
-            "type": "string"
-          },
-          "youtube": {
-            "type": "string"
-          },
-          "maps_link": {
-            "type": "string"
-          },
-          "wtc_location_area": {
-            "type": "string"
-          },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "locale": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -8442,21 +9485,23 @@
       "Wtc-ministries-category": {
         "required": [
           "id",
-          "name",
+          "title",
           "description",
-          "icon"
+          "banner",
+          "button_name",
+          "button_link"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "name": {
+          "title": {
             "type": "string"
           },
           "description": {
             "type": "string"
           },
-          "icon": {
+          "banner": {
             "required": [
               "id",
               "name",
@@ -8523,27 +9568,114 @@
               }
             }
           },
-          "localizations": {
+          "button_name": {
+            "type": "string"
+          },
+          "button_link": {
+            "type": "string"
+          },
+          "wtc_articles": {
             "type": "array",
             "items": {
               "required": [
                 "id",
-                "name",
-                "description",
-                "icon"
+                "title",
+                "banner",
+                "content"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "name": {
+                "title": {
+                  "type": "string"
+                },
+                "banner": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "content": {
+                  "type": "string"
+                },
+                "wtc_leaderships": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "wtc_worship_places": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "gallery": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "wtc_ministries_category": {
+                  "type": "string"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title",
+                "description",
+                "banner",
+                "button_name",
+                "button_link"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
                   "type": "string"
                 },
                 "description": {
                   "type": "string"
                 },
-                "icon": {
+                "banner": {
                   "type": "string"
+                },
+                "button_name": {
+                  "type": "string"
+                },
+                "button_link": {
+                  "type": "string"
+                },
+                "wtc_articles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "localizations": {
                   "type": "array",
@@ -8577,228 +9709,29 @@
       },
       "NewWtc-ministries-category": {
         "required": [
-          "name",
-          "description"
+          "title",
+          "description",
+          "button_name",
+          "button_link"
         ],
         "properties": {
-          "name": {
+          "title": {
             "type": "string"
           },
           "description": {
             "type": "string"
           },
-          "localizations": {
+          "button_name": {
+            "type": "string"
+          },
+          "button_link": {
+            "type": "string"
+          },
+          "wtc_articles": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "locale": {
-            "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
-      "Wtc-ministries-sub-category": {
-        "required": [
-          "id",
-          "name",
-          "description"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "wtc_ministries_category": {
-            "required": [
-              "id",
-              "name",
-              "description",
-              "icon"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "icon": {
-                "type": "string"
-              },
-              "localizations": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "locale": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "icon": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "description"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "wtc_ministries_category": {
-                  "type": "string"
-                },
-                "icon": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "locale": {
-            "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewWtc-ministries-sub-category": {
-        "required": [
-          "name",
-          "description"
-        ],
-        "properties": {
-          "name": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "wtc_ministries_category": {
-            "type": "string"
           },
           "localizations": {
             "type": "array",
@@ -8824,16 +9757,21 @@
       "Wtc-ministries": {
         "required": [
           "id",
-          "carousel"
+          "title",
+          "description",
+          "banner"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "minitries": {
+          "title": {
             "type": "string"
           },
-          "carousel": {
+          "description": {
+            "type": "string"
+          },
+          "banner": {
             "type": "array",
             "items": {
               "required": [
@@ -8908,16 +9846,21 @@
             "items": {
               "required": [
                 "id",
-                "carousel"
+                "title",
+                "description",
+                "banner"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "minitries": {
+                "title": {
                   "type": "string"
                 },
-                "carousel": {
+                "description": {
+                  "type": "string"
+                },
+                "banner": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -8954,8 +9897,15 @@
         }
       },
       "NewWtc-ministries": {
+        "required": [
+          "title",
+          "description"
+        ],
         "properties": {
-          "minitries": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
             "type": "string"
           },
           "localizations": {
@@ -8979,96 +9929,10 @@
           }
         }
       },
-      "Wtc-mission": {
-        "required": [
-          "id",
-          "mission"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "mission": {
-            "type": "string"
-          },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "mission"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "mission": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "locale": {
-            "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewWtc-mission": {
-        "required": [
-          "mission"
-        ],
-        "properties": {
-          "mission": {
-            "type": "string"
-          },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "locale": {
-            "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
-      "Wtc-page": {
+      "Wtc-nextgen-category": {
         "required": [
           "id",
           "name",
-          "title",
           "description"
         ],
         "properties": {
@@ -9078,23 +9942,19 @@
           "name": {
             "type": "string"
           },
-          "title": {
-            "type": "string"
-          },
           "description": {
             "type": "string"
           },
-          "carousel": {
+          "wtc_worship_places": {
             "type": "array",
             "items": {
               "required": [
                 "id",
                 "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
+                "address",
+                "day",
+                "time",
+                "pastor_name"
               ],
               "properties": {
                 "id": {
@@ -9103,86 +9963,52 @@
                 "name": {
                   "type": "string"
                 },
-                "alternativeText": {
+                "address": {
                   "type": "string"
                 },
-                "caption": {
+                "day": {
                   "type": "string"
                 },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
+                "time": {
                   "type": "string"
                 },
-                "ext": {
+                "email": {
                   "type": "string"
                 },
-                "mime": {
+                "phone_1": {
                   "type": "string"
                 },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
+                "phone_2": {
                   "type": "string"
                 },
-                "previewUrl": {
+                "instagram_name": {
                   "type": "string"
                 },
-                "provider": {
+                "instagram_link": {
                   "type": "string"
                 },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
+                "youtube_name": {
                   "type": "string"
                 },
-                "created_by": {
+                "youtube_link": {
                   "type": "string"
                 },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "wtc_leaderships": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "avatar",
-                "name",
-                "bio"
-              ],
-              "properties": {
-                "id": {
+                "pastor_name": {
                   "type": "string"
                 },
-                "avatar": {
+                "pastor_avatar": {
                   "type": "string"
                 },
-                "name": {
+                "maps_link": {
                   "type": "string"
                 },
-                "bio": {
+                "wtc_nextgen_category": {
                   "type": "string"
                 },
-                "instagram": {
+                "wtc_location_area": {
                   "type": "string"
                 },
-                "facebook": {
-                  "type": "string"
-                },
-                "wtc_page": {
+                "wtc_article": {
                   "type": "string"
                 },
                 "localizations": {
@@ -9212,7 +10038,6 @@
               "required": [
                 "id",
                 "name",
-                "title",
                 "description"
               ],
               "properties": {
@@ -9222,19 +10047,10 @@
                 "name": {
                   "type": "string"
                 },
-                "title": {
-                  "type": "string"
-                },
                 "description": {
                   "type": "string"
                 },
-                "carousel": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "wtc_leaderships": {
+                "wtc_worship_places": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -9270,23 +10086,19 @@
           }
         }
       },
-      "NewWtc-page": {
+      "NewWtc-nextgen-category": {
         "required": [
           "name",
-          "title",
           "description"
         ],
         "properties": {
           "name": {
             "type": "string"
           },
-          "title": {
-            "type": "string"
-          },
           "description": {
             "type": "string"
           },
-          "wtc_leaderships": {
+          "wtc_worship_places": {
             "type": "array",
             "items": {
               "type": "string"
@@ -9313,30 +10125,332 @@
           }
         }
       },
-      "Wtc-vision": {
+      "Wtc-worship-place": {
         "required": [
           "id",
-          "vision"
+          "name",
+          "address",
+          "day",
+          "time",
+          "pastor_name"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "vision": {
+          "name": {
             "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "day": {
+            "type": "string"
+          },
+          "time": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "phone_1": {
+            "type": "string"
+          },
+          "phone_2": {
+            "type": "string"
+          },
+          "instagram_name": {
+            "type": "string"
+          },
+          "instagram_link": {
+            "type": "string"
+          },
+          "youtube_name": {
+            "type": "string"
+          },
+          "youtube_link": {
+            "type": "string"
+          },
+          "pastor_name": {
+            "type": "string"
+          },
+          "pastor_avatar": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "maps_link": {
+            "type": "string"
+          },
+          "wtc_nextgen_category": {
+            "required": [
+              "id",
+              "name",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "wtc_worship_places": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "locale": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "wtc_location_area": {
+            "required": [
+              "id",
+              "name",
+              "area",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "area": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "wtc_worship_places": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "wtc_article": {
+            "required": [
+              "id",
+              "title",
+              "banner",
+              "content"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "banner": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "content": {
+                "type": "string"
+              },
+              "wtc_leaderships": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "wtc_worship_places": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "gallery": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "wtc_ministries_category": {
+                "type": "string"
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "locale": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
-                "vision"
+                "name",
+                "address",
+                "day",
+                "time",
+                "pastor_name"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "vision": {
+                "name": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "day": {
+                  "type": "string"
+                },
+                "time": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "phone_1": {
+                  "type": "string"
+                },
+                "phone_2": {
+                  "type": "string"
+                },
+                "instagram_name": {
+                  "type": "string"
+                },
+                "instagram_link": {
+                  "type": "string"
+                },
+                "youtube_name": {
+                  "type": "string"
+                },
+                "youtube_link": {
+                  "type": "string"
+                },
+                "pastor_name": {
+                  "type": "string"
+                },
+                "pastor_avatar": {
+                  "type": "string"
+                },
+                "maps_link": {
+                  "type": "string"
+                },
+                "wtc_nextgen_category": {
+                  "type": "string"
+                },
+                "wtc_location_area": {
+                  "type": "string"
+                },
+                "wtc_article": {
                   "type": "string"
                 },
                 "localizations": {
@@ -9369,12 +10483,61 @@
           }
         }
       },
-      "NewWtc-vision": {
+      "NewWtc-worship-place": {
         "required": [
-          "vision"
+          "name",
+          "address",
+          "day",
+          "time",
+          "pastor_name"
         ],
         "properties": {
-          "vision": {
+          "name": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "day": {
+            "type": "string"
+          },
+          "time": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "phone_1": {
+            "type": "string"
+          },
+          "phone_2": {
+            "type": "string"
+          },
+          "instagram_name": {
+            "type": "string"
+          },
+          "instagram_link": {
+            "type": "string"
+          },
+          "youtube_name": {
+            "type": "string"
+          },
+          "youtube_link": {
+            "type": "string"
+          },
+          "pastor_name": {
+            "type": "string"
+          },
+          "maps_link": {
+            "type": "string"
+          },
+          "wtc_nextgen_category": {
+            "type": "string"
+          },
+          "wtc_location_area": {
+            "type": "string"
+          },
+          "wtc_article": {
             "type": "string"
           },
           "localizations": {

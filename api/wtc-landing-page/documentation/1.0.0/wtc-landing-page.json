@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/wtc-ministries-categories": {
+    "/wtc-landing-page": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the wtc-landing-page's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve wtc-landing-page document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-ministries-category"
+          "Wtc-landing-page"
         ],
         "parameters": [
           {
@@ -193,202 +193,12 @@
           }
         ]
       },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-ministries-category"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewWtc-ministries-category"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/wtc-ministries-categories/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-ministries-category"
-        ],
-        "parameters": []
-      }
-    },
-    "/wtc-ministries-categories/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Wtc-ministries-category"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single wtc-landing-page record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve wtc-landing-page document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -434,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-ministries-category"
+          "Wtc-landing-page"
         ],
         "requestBody": {
           "description": "",
@@ -442,30 +252,19 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewWtc-ministries-category"
+                "$ref": "#/components/schemas/NewWtc-landing-page"
               }
             }
           }
         },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single wtc-landing-page record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single wtc-landing-page based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -508,43 +307,39 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-ministries-category"
+          "Wtc-landing-page"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
+        "parameters": []
       }
     }
   },
   "components": {
     "schemas": {
-      "Wtc-ministries-category": {
+      "Wtc-landing-page": {
         "required": [
           "id",
           "title",
-          "description",
           "banner",
-          "button_name",
-          "button_link"
+          "button_name_1",
+          "button_name_2",
+          "button_name_3",
+          "button_name_4",
+          "button_link_1",
+          "button_link_2",
+          "button_link_3",
+          "button_link_4",
+          "instagram_name",
+          "instagram_link",
+          "youtube_name",
+          "youtube_link"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
           "title": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
+            "type": "string",
+            "default": "World Transformation Church"
           },
           "banner": {
             "required": [
@@ -613,78 +408,41 @@
               }
             }
           },
-          "button_name": {
+          "button_name_1": {
             "type": "string"
           },
-          "button_link": {
+          "button_name_2": {
             "type": "string"
           },
-          "wtc_articles": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "title",
-                "banner",
-                "content"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "banner": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "content": {
-                  "type": "string"
-                },
-                "wtc_leaderships": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "wtc_worship_places": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "gallery": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "wtc_ministries_category": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "button_name_3": {
+            "type": "string"
+          },
+          "button_name_4": {
+            "type": "string"
+          },
+          "button_link_1": {
+            "type": "string"
+          },
+          "button_link_2": {
+            "type": "string"
+          },
+          "button_link_3": {
+            "type": "string"
+          },
+          "button_link_4": {
+            "type": "string"
+          },
+          "instagram_name": {
+            "type": "string"
+          },
+          "instagram_link": {
+            "type": "string"
+          },
+          "youtube_name": {
+            "type": "string"
+          },
+          "youtube_link": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",
@@ -692,10 +450,19 @@
               "required": [
                 "id",
                 "title",
-                "description",
                 "banner",
-                "button_name",
-                "button_link"
+                "button_name_1",
+                "button_name_2",
+                "button_name_3",
+                "button_name_4",
+                "button_link_1",
+                "button_link_2",
+                "button_link_3",
+                "button_link_4",
+                "instagram_name",
+                "instagram_link",
+                "youtube_name",
+                "youtube_link"
               ],
               "properties": {
                 "id": {
@@ -704,23 +471,44 @@
                 "title": {
                   "type": "string"
                 },
-                "description": {
-                  "type": "string"
-                },
                 "banner": {
                   "type": "string"
                 },
-                "button_name": {
+                "button_name_1": {
                   "type": "string"
                 },
-                "button_link": {
+                "button_name_2": {
                   "type": "string"
                 },
-                "wtc_articles": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "button_name_3": {
+                  "type": "string"
+                },
+                "button_name_4": {
+                  "type": "string"
+                },
+                "button_link_1": {
+                  "type": "string"
+                },
+                "button_link_2": {
+                  "type": "string"
+                },
+                "button_link_3": {
+                  "type": "string"
+                },
+                "button_link_4": {
+                  "type": "string"
+                },
+                "instagram_name": {
+                  "type": "string"
+                },
+                "instagram_link": {
+                  "type": "string"
+                },
+                "youtube_name": {
+                  "type": "string"
+                },
+                "youtube_link": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -752,31 +540,62 @@
           }
         }
       },
-      "NewWtc-ministries-category": {
+      "NewWtc-landing-page": {
         "required": [
           "title",
-          "description",
-          "button_name",
-          "button_link"
+          "button_name_1",
+          "button_name_2",
+          "button_name_3",
+          "button_name_4",
+          "button_link_1",
+          "button_link_2",
+          "button_link_3",
+          "button_link_4",
+          "instagram_name",
+          "instagram_link",
+          "youtube_name",
+          "youtube_link"
         ],
         "properties": {
           "title": {
+            "type": "string",
+            "default": "World Transformation Church"
+          },
+          "button_name_1": {
             "type": "string"
           },
-          "description": {
+          "button_name_2": {
             "type": "string"
           },
-          "button_name": {
+          "button_name_3": {
             "type": "string"
           },
-          "button_link": {
+          "button_name_4": {
             "type": "string"
           },
-          "wtc_articles": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "button_link_1": {
+            "type": "string"
+          },
+          "button_link_2": {
+            "type": "string"
+          },
+          "button_link_3": {
+            "type": "string"
+          },
+          "button_link_4": {
+            "type": "string"
+          },
+          "instagram_name": {
+            "type": "string"
+          },
+          "instagram_link": {
+            "type": "string"
+          },
+          "youtube_name": {
+            "type": "string"
+          },
+          "youtube_link": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",

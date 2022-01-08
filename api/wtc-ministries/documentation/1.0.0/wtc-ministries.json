@@ -318,16 +318,21 @@
       "Wtc-ministries": {
         "required": [
           "id",
-          "carousel"
+          "title",
+          "description",
+          "banner"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "minitries": {
+          "title": {
             "type": "string"
           },
-          "carousel": {
+          "description": {
+            "type": "string"
+          },
+          "banner": {
             "type": "array",
             "items": {
               "required": [
@@ -402,16 +407,21 @@
             "items": {
               "required": [
                 "id",
-                "carousel"
+                "title",
+                "description",
+                "banner"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "minitries": {
+                "title": {
                   "type": "string"
                 },
-                "carousel": {
+                "description": {
+                  "type": "string"
+                },
+                "banner": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -448,8 +458,15 @@
         }
       },
       "NewWtc-ministries": {
+        "required": [
+          "title",
+          "description"
+        ],
         "properties": {
-          "minitries": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
             "type": "string"
           },
           "localizations": {

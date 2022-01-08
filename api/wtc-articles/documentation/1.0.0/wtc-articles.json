@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/wtc-ministries-categories": {
+    "/wtc-articles": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the wtc-articles's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve wtc-articles document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-ministries-category"
+          "Wtc-articles"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new wtc-articles record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve wtc-articles document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-ministries-category"
+          "Wtc-articles"
         ],
         "requestBody": {
           "description": "",
@@ -252,20 +252,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewWtc-ministries-category"
+                "$ref": "#/components/schemas/NewWtc-articles"
               }
             }
           }
         }
       }
     },
-    "/wtc-ministries-categories/count": {
+    "/wtc-articles/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the number of wtc-articles documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve wtc-articles document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -311,18 +311,18 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-ministries-category"
+          "Wtc-articles"
         ],
         "parameters": []
       }
     },
-    "/wtc-ministries-categories/{id}": {
+    "/wtc-articles/{id}": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find one wtc-articles record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve wtc-articles document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-ministries-category"
+          "Wtc-articles"
         ],
         "parameters": [
           {
@@ -385,10 +385,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single wtc-articles record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve wtc-articles document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-ministries-category"
+          "Wtc-articles"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewWtc-ministries-category"
+                "$ref": "#/components/schemas/NewWtc-articles"
               }
             }
           }
@@ -462,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single wtc-articles record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single wtc-articles based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-ministries-category"
+          "Wtc-articles"
         ],
         "parameters": [
           {
@@ -527,14 +527,12 @@
   },
   "components": {
     "schemas": {
-      "Wtc-ministries-category": {
+      "Wtc-articles": {
         "required": [
           "id",
           "title",
-          "description",
           "banner",
-          "button_name",
-          "button_link"
+          "content"
         ],
         "properties": {
           "id": {
@@ -543,66 +541,337 @@
           "title": {
             "type": "string"
           },
-          "description": {
+          "banner": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alternativeText": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "content": {
             "type": "string"
           },
-          "banner": {
+          "wtc_leaderships": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "description"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "avatar": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "instagram_name_1": {
+                  "type": "string"
+                },
+                "instagram_link_1": {
+                  "type": "string"
+                },
+                "instagram_name_2": {
+                  "type": "string"
+                },
+                "instagram_link_2": {
+                  "type": "string"
+                },
+                "wtc_article": {
+                  "type": "string"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "wtc_worship_places": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "address",
+                "day",
+                "time",
+                "pastor_name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "day": {
+                  "type": "string"
+                },
+                "time": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "phone_1": {
+                  "type": "string"
+                },
+                "phone_2": {
+                  "type": "string"
+                },
+                "instagram_name": {
+                  "type": "string"
+                },
+                "instagram_link": {
+                  "type": "string"
+                },
+                "youtube_name": {
+                  "type": "string"
+                },
+                "youtube_link": {
+                  "type": "string"
+                },
+                "pastor_name": {
+                  "type": "string"
+                },
+                "pastor_avatar": {
+                  "type": "string"
+                },
+                "maps_link": {
+                  "type": "string"
+                },
+                "wtc_nextgen_category": {
+                  "type": "string"
+                },
+                "wtc_location_area": {
+                  "type": "string"
+                },
+                "wtc_article": {
+                  "type": "string"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "gallery": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alternativeText": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "wtc_ministries_category": {
             "required": [
               "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
+              "title",
+              "description",
+              "banner",
+              "button_name",
+              "button_link"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "name": {
+              "title": {
                 "type": "string"
               },
-              "alternativeText": {
+              "description": {
                 "type": "string"
               },
-              "caption": {
+              "banner": {
                 "type": "string"
               },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
+              "button_name": {
                 "type": "string"
               },
-              "ext": {
+              "button_link": {
                 "type": "string"
               },
-              "mime": {
+              "wtc_articles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "locale": {
                 "type": "string"
               },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
+              "published_at": {
                 "type": "string"
               },
               "created_by": {
@@ -613,13 +882,7 @@
               }
             }
           },
-          "button_name": {
-            "type": "string"
-          },
-          "button_link": {
-            "type": "string"
-          },
-          "wtc_articles": {
+          "localizations": {
             "type": "array",
             "items": {
               "required": [
@@ -686,63 +949,6 @@
               }
             }
           },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "title",
-                "description",
-                "banner",
-                "button_name",
-                "button_link"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "banner": {
-                  "type": "string"
-                },
-                "button_name": {
-                  "type": "string"
-                },
-                "button_link": {
-                  "type": "string"
-                },
-                "wtc_articles": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "locale": {
             "type": "string"
           },
@@ -752,31 +958,32 @@
           }
         }
       },
-      "NewWtc-ministries-category": {
+      "NewWtc-articles": {
         "required": [
           "title",
-          "description",
-          "button_name",
-          "button_link"
+          "content"
         ],
         "properties": {
           "title": {
             "type": "string"
           },
-          "description": {
+          "content": {
             "type": "string"
           },
-          "button_name": {
-            "type": "string"
-          },
-          "button_link": {
-            "type": "string"
-          },
-          "wtc_articles": {
+          "wtc_leaderships": {
             "type": "array",
             "items": {
               "type": "string"
             }
+          },
+          "wtc_worship_places": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "wtc_ministries_category": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",

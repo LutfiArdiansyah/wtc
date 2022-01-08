@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-articles",
+      "handler": "wtc-articles.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-articles/count",
+      "handler": "wtc-articles.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-articles/:id",
+      "handler": "wtc-articles.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wtc-articles",
+      "handler": "wtc-articles.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-articles/:id",
+      "handler": "wtc-articles.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-articles/:id",
+      "handler": "wtc-articles.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

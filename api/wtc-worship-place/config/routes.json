@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-worship-places",
+      "handler": "wtc-worship-place.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-worship-places/count",
+      "handler": "wtc-worship-place.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-worship-places/:id",
+      "handler": "wtc-worship-place.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wtc-worship-places",
+      "handler": "wtc-worship-place.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-worship-places/:id",
+      "handler": "wtc-worship-place.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-worship-places/:id",
+      "handler": "wtc-worship-place.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

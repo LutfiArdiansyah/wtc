@@ -1,8 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "wtc_ministries_categories",
+  "kind": "singleType",
+  "collectionName": "wtc_about_uses",
   "info": {
-    "name": "WTC Ministries Category",
+    "name": "WTC About US",
     "description": ""
   },
   "options": {
@@ -16,59 +16,63 @@
     }
   },
   "attributes": {
-    "title": {
+    "about": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "string",
+      "type": "richtext",
       "required": true
     },
-    "description": {
+    "vision": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "text",
+      "type": "richtext",
       "required": true
     },
-    "banner": {
+    "mission": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext",
+      "required": true
+    },
+    "logo_1": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
       }
     },
-    "button_name": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true
-    },
-    "button_link": {
+    "logo_2": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
-      },
-      "type": "string",
-      "required": true
+      }
     },
-    "wtc_articles": {
-      "via": "wtc_ministries_category",
-      "collection": "wtc-articles"
+    "wtc_leaderships": {
+      "collection": "wtc-leadership"
     }
   }
 }

@@ -547,27 +547,31 @@
           "description": {
             "type": "string"
           },
-          "wtc_location_by_areas": {
+          "wtc_worship_places": {
             "type": "array",
             "items": {
               "required": [
                 "id",
-                "location",
+                "name",
                 "address",
-                "times",
-                "phone_1"
+                "day",
+                "time",
+                "pastor_name"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "location": {
+                "name": {
                   "type": "string"
                 },
                 "address": {
                   "type": "string"
                 },
-                "times": {
+                "day": {
+                  "type": "string"
+                },
+                "time": {
                   "type": "string"
                 },
                 "email": {
@@ -579,19 +583,34 @@
                 "phone_2": {
                   "type": "string"
                 },
-                "instagram": {
+                "instagram_name": {
                   "type": "string"
                 },
-                "facebook": {
+                "instagram_link": {
                   "type": "string"
                 },
-                "youtube": {
+                "youtube_name": {
+                  "type": "string"
+                },
+                "youtube_link": {
+                  "type": "string"
+                },
+                "pastor_name": {
+                  "type": "string"
+                },
+                "pastor_avatar": {
                   "type": "string"
                 },
                 "maps_link": {
                   "type": "string"
                 },
+                "wtc_nextgen_category": {
+                  "type": "string"
+                },
                 "wtc_location_area": {
+                  "type": "string"
+                },
+                "wtc_article": {
                   "type": "string"
                 },
                 "localizations": {
@@ -637,7 +656,7 @@
           "description": {
             "type": "string"
           },
-          "wtc_location_by_areas": {
+          "wtc_worship_places": {
             "type": "array",
             "items": {
               "type": "string"

@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/wtc-ministries-categories": {
+    "/wtc-worship-places": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-ministries-category"
+          "Wtc-worship-place"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-ministries-category"
+          "Wtc-worship-place"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewWtc-ministries-category"
+                "$ref": "#/components/schemas/NewWtc-worship-place"
               }
             }
           }
         }
       }
     },
-    "/wtc-ministries-categories/count": {
+    "/wtc-worship-places/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-ministries-category"
+          "Wtc-worship-place"
         ],
         "parameters": []
       }
     },
-    "/wtc-ministries-categories/{id}": {
+    "/wtc-worship-places/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-ministries-category"
+          "Wtc-worship-place"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-ministries-category"
+          "Wtc-worship-place"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewWtc-ministries-category"
+                "$ref": "#/components/schemas/NewWtc-worship-place"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Wtc-ministries-category"
+          "Wtc-worship-place"
         ],
         "parameters": [
           {
@@ -527,26 +527,56 @@
   },
   "components": {
     "schemas": {
-      "Wtc-ministries-category": {
+      "Wtc-worship-place": {
         "required": [
           "id",
-          "title",
-          "description",
-          "banner",
-          "button_name",
-          "button_link"
+          "name",
+          "address",
+          "day",
+          "time",
+          "pastor_name"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "title": {
+          "name": {
             "type": "string"
           },
-          "description": {
+          "address": {
             "type": "string"
           },
-          "banner": {
+          "day": {
+            "type": "string"
+          },
+          "time": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "phone_1": {
+            "type": "string"
+          },
+          "phone_2": {
+            "type": "string"
+          },
+          "instagram_name": {
+            "type": "string"
+          },
+          "instagram_link": {
+            "type": "string"
+          },
+          "youtube_name": {
+            "type": "string"
+          },
+          "youtube_link": {
+            "type": "string"
+          },
+          "pastor_name": {
+            "type": "string"
+          },
+          "pastor_avatar": {
             "required": [
               "id",
               "name",
@@ -613,76 +643,149 @@
               }
             }
           },
-          "button_name": {
+          "maps_link": {
             "type": "string"
           },
-          "button_link": {
-            "type": "string"
-          },
-          "wtc_articles": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "title",
-                "banner",
-                "content"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "banner": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "content": {
-                  "type": "string"
-                },
-                "wtc_leaderships": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "wtc_worship_places": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "gallery": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "wtc_ministries_category": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "wtc_nextgen_category": {
+            "required": [
+              "id",
+              "name",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "wtc_worship_places": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "locale": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "wtc_location_area": {
+            "required": [
+              "id",
+              "name",
+              "area",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "area": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "wtc_worship_places": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "wtc_article": {
+            "required": [
+              "id",
+              "title",
+              "banner",
+              "content"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "banner": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "content": {
+                "type": "string"
+              },
+              "wtc_leaderships": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "wtc_worship_places": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "gallery": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "wtc_ministries_category": {
+                "type": "string"
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "locale": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -691,36 +794,66 @@
             "items": {
               "required": [
                 "id",
-                "title",
-                "description",
-                "banner",
-                "button_name",
-                "button_link"
+                "name",
+                "address",
+                "day",
+                "time",
+                "pastor_name"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "title": {
+                "name": {
                   "type": "string"
                 },
-                "description": {
+                "address": {
                   "type": "string"
                 },
-                "banner": {
+                "day": {
                   "type": "string"
                 },
-                "button_name": {
+                "time": {
                   "type": "string"
                 },
-                "button_link": {
+                "email": {
                   "type": "string"
                 },
-                "wtc_articles": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "phone_1": {
+                  "type": "string"
+                },
+                "phone_2": {
+                  "type": "string"
+                },
+                "instagram_name": {
+                  "type": "string"
+                },
+                "instagram_link": {
+                  "type": "string"
+                },
+                "youtube_name": {
+                  "type": "string"
+                },
+                "youtube_link": {
+                  "type": "string"
+                },
+                "pastor_name": {
+                  "type": "string"
+                },
+                "pastor_avatar": {
+                  "type": "string"
+                },
+                "maps_link": {
+                  "type": "string"
+                },
+                "wtc_nextgen_category": {
+                  "type": "string"
+                },
+                "wtc_location_area": {
+                  "type": "string"
+                },
+                "wtc_article": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -752,31 +885,62 @@
           }
         }
       },
-      "NewWtc-ministries-category": {
+      "NewWtc-worship-place": {
         "required": [
-          "title",
-          "description",
-          "button_name",
-          "button_link"
+          "name",
+          "address",
+          "day",
+          "time",
+          "pastor_name"
         ],
         "properties": {
-          "title": {
+          "name": {
             "type": "string"
           },
-          "description": {
+          "address": {
             "type": "string"
           },
-          "button_name": {
+          "day": {
             "type": "string"
           },
-          "button_link": {
+          "time": {
             "type": "string"
           },
-          "wtc_articles": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "email": {
+            "type": "string"
+          },
+          "phone_1": {
+            "type": "string"
+          },
+          "phone_2": {
+            "type": "string"
+          },
+          "instagram_name": {
+            "type": "string"
+          },
+          "instagram_link": {
+            "type": "string"
+          },
+          "youtube_name": {
+            "type": "string"
+          },
+          "youtube_link": {
+            "type": "string"
+          },
+          "pastor_name": {
+            "type": "string"
+          },
+          "maps_link": {
+            "type": "string"
+          },
+          "wtc_nextgen_category": {
+            "type": "string"
+          },
+          "wtc_location_area": {
+            "type": "string"
+          },
+          "wtc_article": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-about-us",
+      "handler": "wtc-about-us.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-about-us",
+      "handler": "wtc-about-us.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-about-us",
+      "handler": "wtc-about-us.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

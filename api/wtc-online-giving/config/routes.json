@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-online-giving",
+      "handler": "wtc-online-giving.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-online-giving",
+      "handler": "wtc-online-giving.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-online-giving",
+      "handler": "wtc-online-giving.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

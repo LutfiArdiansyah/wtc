@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-spiritual-journey-contents",
+      "handler": "wtc-spiritual-journey-content.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-spiritual-journey-contents/count",
+      "handler": "wtc-spiritual-journey-content.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-spiritual-journey-contents/:id",
+      "handler": "wtc-spiritual-journey-content.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wtc-spiritual-journey-contents",
+      "handler": "wtc-spiritual-journey-content.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-spiritual-journey-contents/:id",
+      "handler": "wtc-spiritual-journey-content.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-spiritual-journey-contents/:id",
+      "handler": "wtc-spiritual-journey-content.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

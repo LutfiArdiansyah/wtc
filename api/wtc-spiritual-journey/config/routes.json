@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-spiritual-journey",
+      "handler": "wtc-spiritual-journey.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-spiritual-journey",
+      "handler": "wtc-spiritual-journey.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-spiritual-journey",
+      "handler": "wtc-spiritual-journey.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

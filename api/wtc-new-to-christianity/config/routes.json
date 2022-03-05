@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-new-to-christianity",
+      "handler": "wtc-new-to-christianity.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-new-to-christianity",
+      "handler": "wtc-new-to-christianity.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-new-to-christianity",
+      "handler": "wtc-new-to-christianity.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

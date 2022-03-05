@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-communities-lists",
+      "handler": "wtc-communities-list.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-communities-lists/count",
+      "handler": "wtc-communities-list.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-communities-lists/:id",
+      "handler": "wtc-communities-list.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wtc-communities-lists",
+      "handler": "wtc-communities-list.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-communities-lists/:id",
+      "handler": "wtc-communities-list.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-communities-lists/:id",
+      "handler": "wtc-communities-list.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

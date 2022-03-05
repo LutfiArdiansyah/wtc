@@ -139,17 +139,9 @@
       },
       "type": "string"
     },
-    "wtc_nextgen_category": {
-      "model": "wtc-nextgen-category",
-      "via": "wtc_worship_places"
-    },
     "wtc_location_area": {
       "model": "wtc-location-area",
       "via": "wtc_worship_places"
-    },
-    "wtc_article": {
-      "via": "wtc_worship_places",
-      "model": "wtc-articles"
     }
   }
 }

@@ -319,10 +319,7 @@
         "required": [
           "id",
           "title",
-          "description",
-          "banner",
-          "button_name",
-          "button_link"
+          "description"
         ],
         "properties": {
           "id": {
@@ -334,92 +331,13 @@
           "description": {
             "type": "string"
           },
-          "banner": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "button_name": {
-            "type": "string"
-          },
-          "button_link": {
-            "type": "string"
-          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
                 "title",
-                "description",
-                "banner",
-                "button_name",
-                "button_link"
+                "description"
               ],
               "properties": {
                 "id": {
@@ -429,18 +347,6 @@
                   "type": "string"
                 },
                 "description": {
-                  "type": "string"
-                },
-                "banner": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "button_name": {
-                  "type": "string"
-                },
-                "button_link": {
                   "type": "string"
                 },
                 "localizations": {
@@ -476,21 +382,13 @@
       "NewWtc-communities": {
         "required": [
           "title",
-          "description",
-          "button_name",
-          "button_link"
+          "description"
         ],
         "properties": {
           "title": {
             "type": "string"
           },
           "description": {
-            "type": "string"
-          },
-          "button_name": {
-            "type": "string"
-          },
-          "button_link": {
             "type": "string"
           },
           "localizations": {

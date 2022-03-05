@@ -604,13 +604,7 @@
                 "maps_link": {
                   "type": "string"
                 },
-                "wtc_nextgen_category": {
-                  "type": "string"
-                },
                 "wtc_location_area": {
-                  "type": "string"
-                },
-                "wtc_article": {
                   "type": "string"
                 },
                 "localizations": {

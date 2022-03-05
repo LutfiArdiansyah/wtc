@@ -502,12 +502,6 @@
                 "instagram_link_2": {
                   "type": "string"
                 },
-                "wtc_article": {
-                  "type": "string"
-                },
-                "wtc_ministries_list": {
-                  "type": "string"
-                },
                 "localizations": {
                   "type": "array",
                   "items": {

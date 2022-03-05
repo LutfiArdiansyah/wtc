@@ -532,7 +532,8 @@
           "id",
           "title",
           "banner",
-          "about"
+          "about",
+          "leadership"
         ],
         "properties": {
           "id": {
@@ -642,12 +643,6 @@
               "button_link": {
                 "type": "string"
               },
-              "wtc_articles": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "wtc_ministries_lists": {
                 "type": "array",
                 "items": {
@@ -674,65 +669,8 @@
               }
             }
           },
-          "wtc_leaderships": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "description"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "avatar": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "instagram_name_1": {
-                  "type": "string"
-                },
-                "instagram_link_1": {
-                  "type": "string"
-                },
-                "instagram_name_2": {
-                  "type": "string"
-                },
-                "instagram_link_2": {
-                  "type": "string"
-                },
-                "wtc_article": {
-                  "type": "string"
-                },
-                "wtc_ministries_list": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "leadership": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",
@@ -741,7 +679,8 @@
                 "id",
                 "title",
                 "banner",
-                "about"
+                "about",
+                "leadership"
               ],
               "properties": {
                 "id": {
@@ -762,11 +701,8 @@
                 "wtc_ministries_category": {
                   "type": "string"
                 },
-                "wtc_leaderships": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "leadership": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -801,7 +737,8 @@
       "NewWtc-ministries-list": {
         "required": [
           "title",
-          "about"
+          "about",
+          "leadership"
         ],
         "properties": {
           "title": {
@@ -813,11 +750,8 @@
           "wtc_ministries_category": {
             "type": "string"
           },
-          "wtc_leaderships": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "leadership": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",

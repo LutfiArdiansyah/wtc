@@ -83,6 +83,10 @@
     "wtc_article": {
       "via": "wtc_leaderships",
       "model": "wtc-articles"
+    },
+    "wtc_ministries_list": {
+      "via": "wtc_leaderships",
+      "model": "wtc-ministries-list"
     }
   }
 }

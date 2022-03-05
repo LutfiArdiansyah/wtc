@@ -686,6 +686,58 @@
               }
             }
           },
+          "wtc_ministries_list": {
+            "required": [
+              "id",
+              "title",
+              "banner",
+              "about"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "banner": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "about": {
+                "type": "string"
+              },
+              "wtc_ministries_category": {
+                "type": "string"
+              },
+              "wtc_leaderships": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "locale": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -720,6 +772,9 @@
                   "type": "string"
                 },
                 "wtc_article": {
+                  "type": "string"
+                },
+                "wtc_ministries_list": {
                   "type": "string"
                 },
                 "localizations": {
@@ -777,6 +832,9 @@
             "type": "string"
           },
           "wtc_article": {
+            "type": "string"
+          },
+          "wtc_ministries_list": {
             "type": "string"
           },
           "localizations": {

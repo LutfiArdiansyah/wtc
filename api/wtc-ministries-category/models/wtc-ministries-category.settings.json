@@ -69,6 +69,10 @@
     "wtc_articles": {
       "via": "wtc_ministries_category",
       "collection": "wtc-articles"
+    },
+    "wtc_ministries_lists": {
+      "via": "wtc_ministries_category",
+      "collection": "wtc-ministries-list"
     }
   }
 }

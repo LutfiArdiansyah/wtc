@@ -650,6 +650,9 @@
                 "wtc_article": {
                   "type": "string"
                 },
+                "wtc_ministries_list": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -857,6 +860,12 @@
                 "type": "string"
               },
               "wtc_articles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "wtc_ministries_lists": {
                 "type": "array",
                 "items": {
                   "type": "string"

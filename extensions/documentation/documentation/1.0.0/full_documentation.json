@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/05/2022 5:53:31 PM"
+    "x-generation-date": "03/05/2022 8:07:09 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -12886,19 +12886,16 @@
               "required": [
                 "id",
                 "name",
-                "address",
                 "day",
                 "time",
-                "pastor_name"
+                "pastor_name",
+                "adress"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
                 "name": {
-                  "type": "string"
-                },
-                "address": {
                   "type": "string"
                 },
                 "day": {
@@ -12938,6 +12935,9 @@
                   "type": "string"
                 },
                 "wtc_location_area": {
+                  "type": "string"
+                },
+                "adress": {
                   "type": "string"
                 },
                 "localizations": {
@@ -14398,19 +14398,16 @@
         "required": [
           "id",
           "name",
-          "address",
           "day",
           "time",
-          "pastor_name"
+          "pastor_name",
+          "adress"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
           "name": {
-            "type": "string"
-          },
-          "address": {
             "type": "string"
           },
           "day": {
@@ -14550,25 +14547,25 @@
               }
             }
           },
+          "adress": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
                 "name",
-                "address",
                 "day",
                 "time",
-                "pastor_name"
+                "pastor_name",
+                "adress"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
                 "name": {
-                  "type": "string"
-                },
-                "address": {
                   "type": "string"
                 },
                 "day": {
@@ -14610,6 +14607,9 @@
                 "wtc_location_area": {
                   "type": "string"
                 },
+                "adress": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -14643,16 +14643,13 @@
       "NewWtc-worship-place": {
         "required": [
           "name",
-          "address",
           "day",
           "time",
-          "pastor_name"
+          "pastor_name",
+          "adress"
         ],
         "properties": {
           "name": {
-            "type": "string"
-          },
-          "address": {
             "type": "string"
           },
           "day": {
@@ -14689,6 +14686,9 @@
             "type": "string"
           },
           "wtc_location_area": {
+            "type": "string"
+          },
+          "adress": {
             "type": "string"
           },
           "localizations": {

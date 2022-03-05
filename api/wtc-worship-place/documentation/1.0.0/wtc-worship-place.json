@@ -531,19 +531,16 @@
         "required": [
           "id",
           "name",
-          "address",
           "day",
           "time",
-          "pastor_name"
+          "pastor_name",
+          "adress"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
           "name": {
-            "type": "string"
-          },
-          "address": {
             "type": "string"
           },
           "day": {
@@ -683,25 +680,25 @@
               }
             }
           },
+          "adress": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
                 "name",
-                "address",
                 "day",
                 "time",
-                "pastor_name"
+                "pastor_name",
+                "adress"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
                 "name": {
-                  "type": "string"
-                },
-                "address": {
                   "type": "string"
                 },
                 "day": {
@@ -743,6 +740,9 @@
                 "wtc_location_area": {
                   "type": "string"
                 },
+                "adress": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -776,16 +776,13 @@
       "NewWtc-worship-place": {
         "required": [
           "name",
-          "address",
           "day",
           "time",
-          "pastor_name"
+          "pastor_name",
+          "adress"
         ],
         "properties": {
           "name": {
-            "type": "string"
-          },
-          "address": {
             "type": "string"
           },
           "day": {
@@ -822,6 +819,9 @@
             "type": "string"
           },
           "wtc_location_area": {
+            "type": "string"
+          },
+          "adress": {
             "type": "string"
           },
           "localizations": {

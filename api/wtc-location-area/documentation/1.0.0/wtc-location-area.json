@@ -553,19 +553,16 @@
               "required": [
                 "id",
                 "name",
-                "address",
                 "day",
                 "time",
-                "pastor_name"
+                "pastor_name",
+                "adress"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
                 "name": {
-                  "type": "string"
-                },
-                "address": {
                   "type": "string"
                 },
                 "day": {
@@ -605,6 +602,9 @@
                   "type": "string"
                 },
                 "wtc_location_area": {
+                  "type": "string"
+                },
+                "adress": {
                   "type": "string"
                 },
                 "localizations": {

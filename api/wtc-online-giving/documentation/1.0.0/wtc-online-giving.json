@@ -322,7 +322,9 @@
           "description",
           "qc_code",
           "payment_mathod",
-          "qris_description"
+          "qris_description",
+          "account_name",
+          "account_detail"
         ],
         "properties": {
           "id": {
@@ -474,6 +476,12 @@
           "qris_description": {
             "type": "string"
           },
+          "account_name": {
+            "type": "string"
+          },
+          "account_detail": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -483,7 +491,9 @@
                 "description",
                 "qc_code",
                 "payment_mathod",
-                "qris_description"
+                "qris_description",
+                "account_name",
+                "account_detail"
               ],
               "properties": {
                 "id": {
@@ -505,6 +515,12 @@
                   }
                 },
                 "qris_description": {
+                  "type": "string"
+                },
+                "account_name": {
+                  "type": "string"
+                },
+                "account_detail": {
                   "type": "string"
                 },
                 "localizations": {
@@ -541,7 +557,9 @@
         "required": [
           "title",
           "description",
-          "qris_description"
+          "qris_description",
+          "account_name",
+          "account_detail"
         ],
         "properties": {
           "title": {
@@ -551,6 +569,12 @@
             "type": "string"
           },
           "qris_description": {
+            "type": "string"
+          },
+          "account_name": {
+            "type": "string"
+          },
+          "account_detail": {
             "type": "string"
           },
           "localizations": {

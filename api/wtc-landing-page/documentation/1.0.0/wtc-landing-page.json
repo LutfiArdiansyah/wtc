@@ -331,7 +331,11 @@
           "instagram_name",
           "instagram_link",
           "youtube_name",
-          "youtube_link"
+          "youtube_link",
+          "banner_button_name_1",
+          "banner_button_name_2",
+          "banner_button_link_1",
+          "banner_button_link_2"
         ],
         "properties": {
           "id": {
@@ -444,6 +448,18 @@
           "youtube_link": {
             "type": "string"
           },
+          "banner_button_name_1": {
+            "type": "string"
+          },
+          "banner_button_name_2": {
+            "type": "string"
+          },
+          "banner_button_link_1": {
+            "type": "string"
+          },
+          "banner_button_link_2": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -462,7 +478,11 @@
                 "instagram_name",
                 "instagram_link",
                 "youtube_name",
-                "youtube_link"
+                "youtube_link",
+                "banner_button_name_1",
+                "banner_button_name_2",
+                "banner_button_link_1",
+                "banner_button_link_2"
               ],
               "properties": {
                 "id": {
@@ -510,6 +530,18 @@
                 "youtube_link": {
                   "type": "string"
                 },
+                "banner_button_name_1": {
+                  "type": "string"
+                },
+                "banner_button_name_2": {
+                  "type": "string"
+                },
+                "banner_button_link_1": {
+                  "type": "string"
+                },
+                "banner_button_link_2": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -554,7 +586,11 @@
           "instagram_name",
           "instagram_link",
           "youtube_name",
-          "youtube_link"
+          "youtube_link",
+          "banner_button_name_1",
+          "banner_button_name_2",
+          "banner_button_link_1",
+          "banner_button_link_2"
         ],
         "properties": {
           "title": {
@@ -595,6 +631,18 @@
             "type": "string"
           },
           "youtube_link": {
+            "type": "string"
+          },
+          "banner_button_name_1": {
+            "type": "string"
+          },
+          "banner_button_name_2": {
+            "type": "string"
+          },
+          "banner_button_link_1": {
+            "type": "string"
+          },
+          "banner_button_link_2": {
             "type": "string"
           },
           "localizations": {

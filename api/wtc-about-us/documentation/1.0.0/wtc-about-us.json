@@ -318,15 +318,14 @@
       "Wtc-about-us": {
         "required": [
           "id",
-          "about",
           "vision",
-          "mission"
+          "mission",
+          "about_left",
+          "about_right",
+          "values"
         ],
         "properties": {
           "id": {
-            "type": "string"
-          },
-          "about": {
             "type": "string"
           },
           "vision": {
@@ -523,20 +522,28 @@
               }
             }
           },
+          "about_left": {
+            "type": "string"
+          },
+          "about_right": {
+            "type": "string"
+          },
+          "values": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
-                "about",
                 "vision",
-                "mission"
+                "mission",
+                "about_left",
+                "about_right",
+                "values"
               ],
               "properties": {
                 "id": {
-                  "type": "string"
-                },
-                "about": {
                   "type": "string"
                 },
                 "vision": {
@@ -556,6 +563,15 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "about_left": {
+                  "type": "string"
+                },
+                "about_right": {
+                  "type": "string"
+                },
+                "values": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -589,14 +605,13 @@
       },
       "NewWtc-about-us": {
         "required": [
-          "about",
           "vision",
-          "mission"
+          "mission",
+          "about_left",
+          "about_right",
+          "values"
         ],
         "properties": {
-          "about": {
-            "type": "string"
-          },
           "vision": {
             "type": "string"
           },
@@ -608,6 +623,15 @@
             "items": {
               "type": "string"
             }
+          },
+          "about_left": {
+            "type": "string"
+          },
+          "about_right": {
+            "type": "string"
+          },
+          "values": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",

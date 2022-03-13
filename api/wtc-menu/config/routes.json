@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-menus",
+      "handler": "wtc-menu.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-menus/count",
+      "handler": "wtc-menu.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-menus/:id",
+      "handler": "wtc-menu.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wtc-menus",
+      "handler": "wtc-menu.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-menus/:id",
+      "handler": "wtc-menu.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-menus/:id",
+      "handler": "wtc-menu.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_download_lists",
+  "info": {
+    "name": "download_list",
+    "icon": "arrow-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

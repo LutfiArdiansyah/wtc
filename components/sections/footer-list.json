@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_footer_lists",
+  "info": {
+    "name": "footer_list",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-breadcrumbs",
+      "handler": "wtc-breadcrumb.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-breadcrumbs/count",
+      "handler": "wtc-breadcrumb.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-breadcrumbs/:id",
+      "handler": "wtc-breadcrumb.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wtc-breadcrumbs",
+      "handler": "wtc-breadcrumb.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-breadcrumbs/:id",
+      "handler": "wtc-breadcrumb.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-breadcrumbs/:id",
+      "handler": "wtc-breadcrumb.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

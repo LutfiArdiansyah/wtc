@@ -220,6 +220,15 @@
       },
       "type": "string",
       "required": true
+    },
+    "caption_area": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
     }
   }
 }

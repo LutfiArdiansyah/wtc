@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "wtc_menus",
   "info": {
-    "name": "WTC Menu"
+    "name": "WTC Menu",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -27,7 +28,7 @@
     "link": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
       "type": "string",

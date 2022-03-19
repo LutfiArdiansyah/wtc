@@ -51,8 +51,8 @@
       "required": true
     },
     "wtc_ministries_category": {
-      "model": "wtc-ministries-category",
-      "via": "wtc_ministries_lists"
+      "via": "wtc_ministries_lists",
+      "model": "wtc-ministries-category"
     },
     "leadership": {
       "pluginOptions": {

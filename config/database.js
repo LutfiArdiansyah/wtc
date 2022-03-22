@@ -5,11 +5,11 @@ module.exports = ({ env }) => ({
       connector: 'bookshelf',
       settings: {
         client: 'mysql',
-        host: env('DATABASE_HOST', '217.21.72.246'),
+        host: env('DATABASE_HOST', ''),
         port: env.int('DATABASE_PORT', 3306),
-        database: env('DATABASE_NAME', 'u1664547_staging_wtc'),
-        username: env('DATABASE_USERNAME', 'u1664547_wtc'),
-        password: env('DATABASE_PASSWORD', 'Wtc@2022'),
+        database: env('DATABASE_NAME', ''),
+        username: env('DATABASE_USERNAME', ''),
+        password: env('DATABASE_PASSWORD', ''),
         ssl: env.bool('DATABASE_SSL', false),
       },
       options: {}

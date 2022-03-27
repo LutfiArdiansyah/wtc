@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "wtc_breadcrumbs",
+  "collectionName": "wtc_breadcrumb_lists",
   "info": {
-    "name": "WTC Breadcrumb",
+    "name": "WTC Breadcrumb List",
     "description": ""
   },
   "options": {
@@ -16,15 +16,6 @@
     }
   },
   "attributes": {
-    "page": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string",
-      "required": true
-    },
     "name": {
       "pluginOptions": {
         "i18n": {
@@ -34,23 +25,26 @@
       "type": "string",
       "required": true
     },
-    "url": {
+    "wtc_breadcrumb_group": {
+      "via": "wtc_breadcrumb_lists",
+      "model": "wtc-breadcrumb-group"
+    },
+    "link": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
       "type": "string",
       "required": true
     },
-    "sort": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "integer",
-      "required": true
+    "wtc_ministries_lists": {
+      "collection": "wtc-ministries-list",
+      "via": "wtc_breadcrumb_list"
+    },
+    "wtc_communities_lists": {
+      "collection": "wtc-communities-list",
+      "via": "wtc_breadcrumb_list"
     }
   }
 }

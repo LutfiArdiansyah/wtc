@@ -62,6 +62,10 @@
       },
       "type": "richtext",
       "required": true
+    },
+    "wtc_breadcrumb_list": {
+      "via": "wtc_ministries_lists",
+      "model": "wtc-breadcrumb-list"
     }
   }
 }

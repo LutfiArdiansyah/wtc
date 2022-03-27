@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-breadcrumb-lists",
+      "handler": "wtc-breadcrumb-list.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-breadcrumb-lists/count",
+      "handler": "wtc-breadcrumb-list.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-breadcrumb-lists/:id",
+      "handler": "wtc-breadcrumb-list.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wtc-breadcrumb-lists",
+      "handler": "wtc-breadcrumb-list.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-breadcrumb-lists/:id",
+      "handler": "wtc-breadcrumb-list.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-breadcrumb-lists/:id",
+      "handler": "wtc-breadcrumb-list.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "wtc_breadcrumbs",
+  "collectionName": "wtc_breadcrumb_groups",
   "info": {
-    "name": "WTC Breadcrumb",
+    "name": "WTC Breadcrumb Group",
     "description": ""
   },
   "options": {
@@ -16,15 +16,6 @@
     }
   },
   "attributes": {
-    "page": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string",
-      "required": true
-    },
     "name": {
       "pluginOptions": {
         "i18n": {
@@ -34,7 +25,7 @@
       "type": "string",
       "required": true
     },
-    "url": {
+    "link": {
       "pluginOptions": {
         "i18n": {
           "localized": false
@@ -43,14 +34,9 @@
       "type": "string",
       "required": true
     },
-    "sort": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "integer",
-      "required": true
+    "wtc_breadcrumb_lists": {
+      "via": "wtc_breadcrumb_group",
+      "collection": "wtc-breadcrumb-list"
     }
   }
 }

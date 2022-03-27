@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wtc-breadcrumb-groups",
+      "handler": "wtc-breadcrumb-group.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-breadcrumb-groups/count",
+      "handler": "wtc-breadcrumb-group.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wtc-breadcrumb-groups/:id",
+      "handler": "wtc-breadcrumb-group.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wtc-breadcrumb-groups",
+      "handler": "wtc-breadcrumb-group.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wtc-breadcrumb-groups/:id",
+      "handler": "wtc-breadcrumb-group.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wtc-breadcrumb-groups/:id",
+      "handler": "wtc-breadcrumb-group.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

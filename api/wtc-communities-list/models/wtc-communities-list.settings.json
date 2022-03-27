@@ -59,6 +59,10 @@
       },
       "type": "string",
       "required": true
+    },
+    "wtc_breadcrumb_list": {
+      "via": "wtc_communities_lists",
+      "model": "wtc-breadcrumb-list"
     }
   }
 }

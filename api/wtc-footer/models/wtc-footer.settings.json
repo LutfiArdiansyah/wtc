@@ -105,30 +105,6 @@
       "type": "string",
       "required": true
     },
-    "twitter_link": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string"
-    },
-    "instagram_link": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string"
-    },
-    "facebook_link": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string"
-    },
     "copyright": {
       "pluginOptions": {
         "i18n": {
@@ -136,6 +112,17 @@
         }
       },
       "type": "string"
+    },
+    "social_media": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "component": "sections.download-list",
+      "required": true
     }
   }
 }
